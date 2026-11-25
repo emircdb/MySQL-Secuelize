@@ -451,7 +451,7 @@ app.get('/reparto/:act', async (req, res) => {
 
     if (resultados.length === 0) {
       return res.status(404).json({
-        error: `No se encontraron títulos con "${act}" en el reparto`,
+        error: `No se encontró ningún actor o actriz que coincida con "${act}"`,
       });
     }
 
